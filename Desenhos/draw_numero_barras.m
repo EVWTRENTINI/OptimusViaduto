@@ -1,0 +1,6 @@
+   
+for n=1:nb
+    text((joints((jb(n,1)),1)+joints((jb(n,2)),1))/2,...
+        (joints((jb(n,1)),2)+joints((jb(n,2)),2))/2,...
+        (joints((jb(n,1)),3)+joints((jb(n,2)),3))/2,num2str(n))
+end
