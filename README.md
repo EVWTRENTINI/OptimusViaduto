@@ -10,3 +10,4 @@ Software for multiobjective optimization of precast and prestressed concrete via
 
 ## Links
 * __Website__: [https://www.optimusviaduto.ufscar.br](https://www.optimusviaduto.ufscar.br/) 
+* __Contact address__: [eduardowtrentini@gmail.com](mailto:eduardowtrentini@gmail.com) 
