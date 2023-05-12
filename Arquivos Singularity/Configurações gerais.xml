@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Configurações gerais. -->
+    <nfaixa>2</nfaixa> <!-- Número de faixas de rolagem sobre o tabuleiro do viaduto. Utilizado para o cálculo do coeficiente de número de faixas. -->
+    <hpav>0.1</hpav> <!-- Espessura do pavimento asfáltico em métros -->
+    <Umi>75</Umi> <!-- Umidade relativa do ar em %. Utilizada para cálculo da retração. -->
+    <Ti>20</Ti> <!-- Temperatura média diária do ambiente em graus Celsius. -->
+    <nivel_minimo_de_protensao>2</nivel_minimo_de_protensao> <!-- Nível mínimo de protensão exigido: 2 - Protensão limitada; 3 - Protensão completa. Protensão parcial não é aceita. -->
+    <DMLG>10</DMLG> <!-- Data da montagem das longarinas em dias. Utilizada na instabilidade da longarina e no cálculo da fluência dos pilares. -->
+    <DCLJ>15</DCLJ> <!-- Data da concretagem da laje em dias. Utilizada na instabilidade da longarina e no dimensionamento a flexão da longarina. -->
+    <delta_temperatura>15</delta_temperatura> <!-- Variação de temperatura em graus Celsius. Utilizado para o caso de carregamento de variação de temperatura. -->
+    <h_bloco_enterrado>0</h_bloco_enterrado> <!-- Espessura de solo sobre os blocos de fundação em métros. -->
+    <gama_c>1.4</gama_c> <!-- Coeficiente de ponderação das resistências do concreto para combinações últimas normais. -->
+    <gama_s>1.15</gama_s> <!-- Coeficiente de ponderação das resistências do aço para combinações últimas normais. -->
+    <Es>21000</Es> <!-- Módulo de elasticidade do aço da armadura passiva em kN/cm². -->
+    <fyk>50</fyk> <!-- Tensão de escoamento das armaduras passivas em kN/cm². -->
+    <Ep>20000</Ep> <!-- Módulo de elasticidade do aço da armadura ativa em kN/cm². -->
+    <fpyd>146</fpyd> <!-- Tensão de escoamento do aço da armadura ativa em kN/cm². -->
+    <fptd>162.6</fptd> <!-- Tensão última do aço da armadura ativa em kN/cm². -->
+    <Eppu>35</Eppu> <!-- Deformação última do aço da armadura ativa por mil. -->
+    <alfa_e>1</alfa_e> <!-- Coeficiente de correção do módulo de elasticidade do concreto em  função do tipo da brita: 1.2 - basalto e diabásio; 1.0 - granito e gnaisse; 0.9 - calcário; 0.7 arenito. -->
+    <cdl>1e-05</cdl> <!-- Coeficiente de dilatação térmica do Concreto -->
+
+    <!-- Carga de vento. -->
+    <V90_tabuleiro_carregado>1</V90_tabuleiro_carregado> <!-- Carregamento de vento no tabueliro carregado em kN/m². -->
+    <V90_tabuleiro_descarregado>1.5</V90_tabuleiro_descarregado> <!-- Carregamento de vento no tabueliro descarregado em kN/m². -->
+
+    <!-- Parâmetros da discretização de carregamento. -->
+    <Vnx>2</Vnx> <!-- Número de intervalos entre divisões em x para posicionamento do veículo tipo. Necessáriamente par. -->
+    <Vny>4</Vny> <!-- Número de intervalos entre divisões em y para posicionamento do veículo tipo. Necessáriamente par. -->
+    <Mny>5</Mny> <!-- Número de faixas de carregamento de multidão. -->
+    
+    <!-- Configurações gerais sobre fundação. -->
+    <fundacao>
+        <tipo_cimento>CPIIE</tipo_cimento> <!-- Tipo do cimento. Deve estar presente no arquivo de configurações de vida útil de projeto. -->
+        <fck>25000000</fck> <!-- Resistência característica do concreto: 25000000 Pa - para classe de agressividade I e II; 40000000 Pa - para classe de agressividade III e IV. -->
+    </fundacao>
+    <l_max_fuste>1</l_max_fuste> <!-- Comprimento máximo da barra que representa o fuste em metros. -->
+    <dimensionar_barras_fustes_individualmente>false</dimensionar_barras_fustes_individualmente> <!-- true - Dimensionar todas as barras dos fustes; false - uma vez para o maior esforço das barras dos fustes. -->
+    <fustes>
+        <gama_c>3.1</gama_c> <!-- Coeficiente de ponderação das resistências do concreto da fundação para combinações últimas normais. -->
+        <fi_l_max>0.025</fi_l_max> <!-- Diâmetro máximo da armadura longitudinal em metros. -->
+        <fi_l_min>0.01</fi_l_min> <!-- Diâmetro mínimo da armadura longitudinal em metros. -->
+        <fi_t>0.008</fi_t> <!-- Diâmetro da armadura transversal em metros. -->
+    </fustes>
+
+    <!-- Configurações gerais sobre pilares. -->
+    <pilares>
+        <tipo_cimento>CPIIE</tipo_cimento> <!-- Tipo do cimento. Deve estar presente no arquivo de configurações de vida útil de projeto. -->
+        <folga_minima_entre_faces>1</folga_minima_entre_faces> <!-- Folga mínima entre faces de pilares em metros. Utilizado para desconsiderar soluções com pilares muito próximos. -->
+        <altura_minima>2</altura_minima> <!-- Altura mínima do pilar em metros. Utilizado para desconsiderar soluções com pilares muito curtos. -->
+        <abatimento>7</abatimento> <!-- Abatimento do concreto fresco em centimetros. -->
+        <alfa_flu>2</alfa_flu> <!-- Parâmetro alfa para avaliação da fluência em função do cimento. Ver tabela A.2 da 6118:2014. -->
+        <s>0.25</s> <!-- Parâmetro s para avaliação da resistência do concreto na idade j em função do cimento. Ver item 12.3.3 da 6118:2014. -->
+        <fi_l_max>0.025</fi_l_max> <!-- Diâmetro máximo da armadura longitudinal em metros. -->
+        <fi_l_min>0.01</fi_l_min><!-- Diâmetro mínimo da armadura longitudinal em metros. -->
+        <fi_t>0.008</fi_t> <!-- Diâmetro da armadura transversal em metros. -->
+    </pilares>
+    <metodo_dim_pilar>2</metodo_dim_pilar> <!-- Método de dimensionamento dos pilares: 1 - Pilar padrão com curvatura aproximada; 2 - Pilar padrão acoplado a diagramas M, N, 1/r. -->
+    <gama_f3>1.1</gama_f3> <!-- Coeficiente de ponderação gama_f3 utilizado no diagrama normal momento curvatura. -->
+
+    <!-- Configurações gerais sobre travessas. -->
+    <travessas>
+        <tipo_cimento>CPIIE</tipo_cimento> <!-- Tipo do cimento. Deve estar presente no arquivo de configurações de vida útil de projeto. -->
+    </travessas>
+
+    <!-- Configurações gerais sobre lajes. -->
+    <lajes>
+        <tipo_cimento>CPIIE</tipo_cimento> <!-- Tipo do cimento. Deve estar presente no arquivo de configurações de vida útil de projeto. -->
+        <fi_l>0.016</fi_l> <!-- Diâmetro da armadura longitudinal em metros. -->
+    </lajes>
+
+    <!-- Configurações gerais sobre longarinas. -->
+    <longarinas>
+        <tipo_cimento>CPIIE</tipo_cimento> <!-- Tipo do cimento. Deve estar presente no arquivo de configurações de vida útil de projeto. -->
+        <folga_entre_longarinas>0.35</folga_entre_longarinas> <!-- Folga mínima entre banzos de longarinas em metros. Utilizado para desconsiderar soluções com longarinas muito próximos. -->
+        <abatimento>7</abatimento> <!-- Abatimento do concreto fresco em centimetros. -->
+        <alfa_ret>1</alfa_ret> <!-- Parâmetro alfa para avaliação da retração em função do cimento. Ver tabela A.2 da 6118:2014. -->
+        <alfa_flu>2</alfa_flu> <!-- Parâmetro alfa para avaliação da fluência em função do cimento. Ver tabela A.2 da 6118:2014. -->
+        <s>0.25</s> <!-- Parâmetro s para avaliação da resistência do concreto na idade j em função do cimento. Ver item 12.3.3 da 6118:2014. -->
+        <delta_t_ef>10</delta_t_ef> <!-- Data da protensão. Período, em dias, durante o qual a temperatura média do ambiente, Ti, pode ser admitida constante. -->
+    </longarinas>
+    <disc_cor_tor>0.35</disc_cor_tor> <!-- Discretização do detalhamento da armadura transversal. Discretização até a metade do vão, valor máximo 0.5. É tratado como simetrico. -->
+    <folga>0.35</folga> <!-- Folga entre nó inicial e final das longarinas consecutivas em metros. -->
+    <junta>0.05</junta> <!-- Junta de dilatação entre tabuleiros em metros (contida dentro da folga). -->
+    <comprimento_apoiado_pre_laje>0.05</comprimento_apoiado_pre_laje> <!-- Comprimento do apoio da pré laje sobre a longarina. Utilizado para o cálculo do cisalhamento na interface. -->
+    <disc_cabos>10</disc_cabos> <!-- Discretização da altura dos cabos de protensão ao longo do comprimento da longarila. Intervalos além dos dois extremos (Necessariamente par). -->
+    <limite_Pi_fptk>0.74</limite_Pi_fptk> <!-- Valores-limites fptk por ocasião da operação de protensão. Ver item 9.6.1.2.1 da 6118:2014. -->
+    <limite_Pi_fpyk>0.82</limite_Pi_fpyk> <!-- Valores-limites fpyk por ocasião da operação de protensão. Ver item 9.6.1.2.1 da 6118:2014. -->
+    <mi>0.2</mi> <!-- Coeficiente de atrito cordoalhas-bainha metálica. -->
+    <ka>0.002</ka> <!-- Coeficiente de perda devido a curvas não intencionais. -->
+    <acomodacao_anc>0.006</acomodacao_anc> <!-- Acomodação da ancoragem em metros. -->
+    <tipo_diametro_cordoalha>1</tipo_diametro_cordoalha> <!-- Diâmetro da cordoalha: 1 - cordoalha de 12.7 mm; 2 - cordoalha de 15.2 mm. -->
+    <longa_fi_long_min>0.016</longa_fi_long_min> <!-- Diâmetro mínimo da armadura longitudinal em metros. -->
+    <longa_fi_long_max>0.025</longa_fi_long_max> <!-- Diâmetro máximo da armadura longitudinal em metros. -->
+    <longa_fi_tran>0.0125</longa_fi_tran> <!-- Diâmetro da armadura transversal em metros. -->
+    <dia_max_agr_grau>0.025</dia_max_agr_grau> <!-- Diamensão máxima do agregado graúdo em metros. -->
+    <n_max_camadas>30</n_max_camadas> <!-- Número máximo de camadas de armadura. -->
+    <disc_rep_as>8</disc_rep_as> <!-- Número de faixas que representam a área de armadura passiva. -->
+    <dcabo>0.066</dcabo> <!-- Diâmetro da bainha metálica do cabo de protensão em metros. -->
+    <danc>0.132</danc> <!-- Distância entre eixo de ancoragens de protensão. -->
+    <nmcc>10</nmcc> <!-- Número máximo de cordoalhas por cabo. -->
+
+    <!-- Configurações gerais sobre verificação da estabilidade lateral das longarinas. -->
+    <analise_nao_linear_de_estabilidade_lateral>true</analise_nao_linear_de_estabilidade_lateral> <!-- true - Analisa estabilidade lateral utilizando análise não linear; false - Verifica apenas no limite de esbeltez da longarina. -->
+    <ex_ap>0</ex_ap> <!-- Valor ignorado, funcionalidade não implementada. -->
+    <ex_lg>0.0033333</ex_lg> <!-- Excentricidade inicial da longarina em função do comprimento. Ver NBR 7187:2021 item 8.5.2, lavor recomendado l/300. -->
+    <mT_lg_livre>109.2</mT_lg_livre> <!-- Deformação lateral por temperatura da longarina sob aparelho de apoio, multiplicador do quadrado do vão Jong-Han Lee (2012). -->
+    <fs_r>1.5</fs_r> <!-- Fator de minoração da resistência ao tombamento. Longarina sob aparelho de apoio -->
+    <mT_lg_travada>109.2</mT_lg_travada> <!-- Deformação lateral por temperatura da longarina situação com travamento nos apoios, multiplicador do quadrado do vão Jong-Han Lee (2012). -->
+    <fs_pcrit>4</fs_pcrit> <!-- Fator de minoração da carga crítica. Situação com travamento nos apoios. -->
+
+    <!-- Multiplicadores de flecha elástica para estimar flecha diferida. De acordo com Pontes de concreto com ênfase na aplicação de elementos pré-moldados de Mounir Khalil El Debs (2021) -->
+    <mult_flecha_peso_proprio>2.7</mult_flecha_peso_proprio>
+    <mult_flecha_acoes_permanentes>3</mult_flecha_acoes_permanentes>
+    <mult_flecha_protensao>2.45</mult_flecha_protensao>
+    <mult_flecha_acoes_variaveis>3</mult_flecha_acoes_variaveis>
+
+    <limite_l_sobre_flecha_ativa>640</limite_l_sobre_flecha_ativa> <!-- Limite da flecha ativa. -->
+    <limite_l_sobre_flecha_diferida>350</limite_l_sobre_flecha_diferida> <!-- Limite da flecha diferida. -->
+    
+    <!-- Configurações gerais sobre aparelhos de apoio. -->
+    <pap>
+        <dureza>60</dureza> <!-- Dureza shore A (entre 50 e 70). -->
+        <cl>0.004</cl> <!-- Espessura das camadas externas de elastômero em metros, cobrimento lateral. -->
+        <he>0.0025</he> <!-- Espessura das camadas externas de elastômero em metros, cobrimento vertical. -->
+        <s>0.00325</s> <!-- Espessura das chapas de aço em metros. -->
+        <himax>0.016</himax> <!-- Espessura máxima da camada elastômero em metros. -->
+        <fb>0.1</fb> <!-- Diferença entre a largura da base da longarina e a largura do aparelho de apoio em metros. -->
+        <a_sobre_b>0.6</a_sobre_b> <!-- Relação entre a menor dimensão sobre a maior dimensão. -->
+    </pap>
+</struct>

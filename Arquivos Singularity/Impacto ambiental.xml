@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Impacto ambiental medido em tolenadas de gás carbono -->
+    <!-- Impacto ambiental do concreto em função da resistência. Utilizar quantos valores forem necessários -->
+    <concreto>
+        <fck>15</fck> <!-- MPa -->
+        <valor>0.321</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>20</fck> <!-- MPa -->
+        <valor>0.348</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>25</fck> <!-- MPa -->
+        <valor>0.374</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>30</fck> <!-- MPa -->
+        <valor>0.394</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>35</fck> <!-- MPa -->
+        <valor>0.416</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>40</fck> <!-- MPa -->
+        <valor>0.438</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>45</fck> <!-- MPa -->
+        <valor>0.46</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>50</fck> <!-- MPa -->
+        <valor>0.486</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>60</fck> <!-- MPa -->
+        <valor>0.541</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>65</fck> <!-- MPa -->
+        <valor>0.579</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>70</fck> <!-- MPa -->
+        <valor>0.588</valor> <!-- tCO2/m³ -->
+    </concreto>
+    <concreto>
+        <fck>80</fck> <!-- MPa -->
+        <valor>0.619</valor> <!-- tCO2/m³ -->
+    </concreto>
+
+    <!-- Impacto ambiental dos serviços relacionados aos tubulões. -->
+    <tubuloes>
+        <escavacao_fuste>0.0088164</escavacao_fuste> <!-- tCO2/m³ -->
+        <alargamento_base>0</alargamento_base> <!-- tCO2/m³ -->
+        <CA50>0.0018452</CA50> <!-- tCO2/kg -->
+        <lancamento_concreto>0</lancamento_concreto> <!-- tCO2/m³ -->
+    </tubuloes>
+
+    <!-- Impacto ambiental dos serviços relacionados aos blocos de fundação. -->
+    <blocos>
+        <forma>0.018321</forma> <!-- tCO2/m² -->
+        <CA50>0.0018452</CA50> <!-- tCO2/kg -->
+        <lancamento_concreto>0</lancamento_concreto> <!-- tCO2/m³ -->
+    </blocos>
+
+    <!-- Impacto ambiental dos serviços relacionados aos pilares. -->
+    <pilares>
+        <forma>0.00092804</forma> <!-- tCO2/m² -->
+        <CA50>0.0018452</CA50> <!-- tCO2/kg -->
+        <lancamento_concreto>0.00233</lancamento_concreto> <!-- tCO2/m³ -->
+    </pilares>
+
+    <!-- Impacto ambiental dos serviços relacionados as vigas travessas. -->
+    <travessas>
+        <forma>0.018321</forma> <!-- tCO2/m² -->
+        <cimbramento>0.012455</cimbramento> <!-- tCO2/m³ -->
+        <CA50>0.0018452</CA50> <!-- tCO2/kg -->
+        <lancamento_concreto>0.00233</lancamento_concreto> <!-- tCO2/m³ -->
+    </travessas>
+
+    <!-- Impacto ambiental dos serviços relacionados as vigas longarinas. -->
+    <longarinas>
+        <aparelho_de_apoio>0</aparelho_de_apoio> <!-- tCO2/dcm³ -->
+        <CA50>0.0018452</CA50> <!-- tCO2/kg -->
+        <forma>0.0045523</forma> <!-- tCO2/m² -->
+        <lancamento_concreto>0.00233</lancamento_concreto> <!-- tCO2/m³ -->
+
+        <!-- Carga, descarga, manobra e lançamento de viga pré-moldada com utilização de guindaste -->
+        <manobra_lancamento>
+            <peso>400</peso> <!-- kN -->
+            <valor>0.8508</valor> <!-- tCO2 -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>500</peso> <!-- kN -->
+            <valor>0.8508</valor> <!-- tCO2 -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>750</peso> <!-- kN -->
+            <valor>1.0142</valor> <!-- tCO2 -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>1000</peso> <!-- kN -->
+            <valor>1.0374</valor> <!-- tCO2 -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>1250</peso> <!-- kN -->
+            <valor>1.2089</valor> <!-- tCO2 -->
+        </manobra_lancamento>
+
+        <!-- Cordoalha CP 190 RB D = 12.7 mm - fornecimento e instalação. -->
+        <cordoalha_127>0.0018452</cordoalha_127> <!-- tCO2/kg -->
+
+        <!-- Cordoalha CP 190 RB D = 15.2 mm - fornecimento e instalação. -->
+        <cordoalha_152>0.0018452</cordoalha_152> <!-- tCO2/kg -->
+
+        <!-- Bainha metálica redonda - fornecimento, instalação e injeção de nata de cimento -->
+        <bainha>
+            <diametro>30</diametro> <!-- mm -->
+            <valor>0.0008191</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>35</diametro> <!-- mm -->
+            <valor>0.00095561</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>40</diametro> <!-- mm -->
+            <valor>0.0010921</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>45</diametro> <!-- mm -->
+            <valor>0.0012286</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>50</diametro> <!-- mm -->
+            <valor>0.0013652</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>55</diametro> <!-- mm -->
+            <valor>0.0015017</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>60</diametro> <!-- mm -->
+            <valor>0.0016382</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>65</diametro> <!-- mm -->
+            <valor>0.0017747</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>70</diametro> <!-- mm -->
+            <valor>0.0019112</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>75</diametro> <!-- mm -->
+            <valor>0.0020477</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>80</diametro> <!-- mm -->
+            <valor>0.0021843</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>85</diametro> <!-- mm -->
+            <valor>0.0023208</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>90</diametro> <!-- mm -->
+            <valor>0.0024573</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>95</diametro> <!-- mm -->
+            <valor>0.0025938</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>100</diametro> <!-- mm -->
+            <valor>0.0027303</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>110</diametro> <!-- mm -->
+            <valor>0.0030034</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>120</diametro> <!-- mm -->
+            <valor>0.0032764</valor> <!-- tCO2/m -->
+        </bainha>
+        <bainha>
+            <diametro>130</diametro> <!-- mm -->
+            <valor>0.0035494</valor> <!-- tCO2/m -->
+        </bainha>
+
+        <!-- Ancoragem ativa e passiva para cordoalhas aderentes com D = 12.7 mm - fornecimento e instalação -->
+        <ancoragens_127>
+            <n_cordoalhas>4</n_cordoalhas>
+            <valor>0.012363</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>6</n_cordoalhas>
+            <valor>0.031922</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>8</n_cordoalhas>
+            <valor>0.039856</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>10</n_cordoalhas>
+            <valor>0.040779</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>12</n_cordoalhas>
+            <valor>0.041517</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>19</n_cordoalhas>
+            <valor>0.07104</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>22</n_cordoalhas>
+            <valor>0.095581</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>27</n_cordoalhas>
+            <valor>0.14909</valor> <!-- tCO2 -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>31</n_cordoalhas>
+            <valor>0.19633</valor> <!-- tCO2 -->
+        </ancoragens_127>
+
+        <!-- Ancoragem ativa e passiva para cordoalhas aderentes com D = 15.2 mm - fornecimento e instalação -->
+        <ancoragens_152>
+            <n_cordoalhas>4</n_cordoalhas>
+            <valor>0.017898</valor> <!-- tCO2 -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>6</n_cordoalhas>
+            <valor>0.031922</valor> <!-- tCO2 -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>8</n_cordoalhas>
+            <valor>0.039856</valor> <!-- tCO2 -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>10</n_cordoalhas>
+            <valor>0.061076</valor> <!-- tCO2 -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>12</n_cordoalhas>
+            <valor>0.069195</valor> <!-- tCO2 -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>15</n_cordoalhas>
+            <valor>0.093367</valor> <!-- tCO2 -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>19</n_cordoalhas>
+            <valor>0.13396</valor> <!-- tCO2 -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>22</n_cordoalhas>
+            <valor>0.19153</valor> <!-- tCO2 -->
+        </ancoragens_152>
+    </longarinas>
+
+    <lajes>
+        <trelicas>0.0018452</trelicas> <!-- tCO2/kg -->
+        <CA50>0.0018452</CA50> <!-- tCO2/kg -->
+        <lancamento_concreto>0.00233</lancamento_concreto> <!-- tCO2/m³ -->
+    </lajes>
+</struct>

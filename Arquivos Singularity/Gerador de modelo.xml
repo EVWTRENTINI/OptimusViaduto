@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Limites do espaço de busca. -->
+    <L_vao> <!-- Comprimento dos vãos. -->
+        <min>10</min> <!-- Comprimento mínimo dos vãos em metros. -->
+        <max>45</max> <!-- Comprimento máximo dos vãos em metros. -->
+        <discretizacao>1</discretizacao> <!-- Discretização dos vãos em metros. -->
+    </L_vao>
+
+    <fundacao> <!-- Fundações. -->
+        <profundidade_fundacao> <!-- Profundidade das fundações. -->
+            <min>6</min> <!-- Profundidade mínima das fundações em metros. -->
+            <max>20</max> <!-- Profundidade máxima das fundações em metros. -->
+            <discretizacao>1</discretizacao> <!-- Discretização profundidade das fundações em metros. -->
+        </profundidade_fundacao>
+        <d> <!-- Diâmetro do fuste dos tubulões em metros. -->
+            <min>0.7</min> <!-- Diâmetro mínimo do fuste dos tubulões em metros. -->
+            <max>2</max> <!-- Diâmetro máximo do fuste dos tubulões em metros. -->
+            <discretizacao>0.1</discretizacao> <!-- Discretização do diâmetro do fuste dos tubulões em metros. -->
+        </d>
+        <c> <!-- Cobrimento das armaduras do fuste dos tubulões. -->
+            <min>0.04</min> <!-- Cobrimento mínimo do fuste dos tubulões em metros. -->
+            <max>0.1</max> <!-- Cobrimento máximo do fuste dos tubulões em metros. -->
+            <discretizacao>0.0005</discretizacao> <!-- Discretização do cobrimento do fuste dos tubulões em metros. -->
+        </c>
+    </fundacao>
+
+    <pilares> <!-- Pilares. -->
+        <n> <!-- Número de pilares por apoio, ou por travessa. -->
+            <min>2</min> <!-- Número mínimo de pilares por apoio. Utilizar números inteiros. -->
+            <max>5</max> <!-- Número máximo de pilares por apoio. Utilizar números inteiros. -->
+            <discretizacao>1</discretizacao> <!--Discretização do número de pilares por apoio. Utilizar números inteiros. -->
+        </n>
+        <d> <!-- Diâmetro dos pilares. -->
+            <min>0.7</min> <!-- Diâmetro mínimo dos pilares em metros. -->
+            <max>2</max> <!-- Diâmetro máximo dos pilares em metros. -->
+            <discretizacao>0.05</discretizacao> <!-- Discretização do diâmetro dos pilares em metros. -->
+        </d>
+        <fck> <!-- Resistência característica do concreto dos pilares. -->
+            <min>25</min> <!-- Resistência característica mínima do concreto dos pilares em MPa. -->
+            <max>90</max> <!-- Resistência característica máxima do concreto dos pilares em MPa. -->
+            <discretizacao>5</discretizacao> <!-- Discretização da resistência característica do concreto dos pilares em MPa. -->
+        </fck>
+        <c> <!-- Cobrimento das armaduras dos pilares. -->
+            <min>0.025</min> <!-- Valor mínimo em metros. -->
+            <max>0.1</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.0005</discretizacao> <!-- Discretização em metros. -->
+        </c>
+    </pilares>
+
+    <travessas> <!-- Vigas travessas. -->
+        <h> <!-- Altura das vigas travessas. -->
+            <min>0.7</min> <!-- Valor mínimo em metros. -->
+            <max>2</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.05</discretizacao> <!-- Discretização em metros. -->
+        </h>
+        <b> <!-- Largura das vigas travessas. -->
+            <min>0.7</min> <!-- Valor mínimo em metros. -->
+            <max>2</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.05</discretizacao> <!-- Discretização em metros. -->
+        </b>
+        <bl> <!-- Balanço das vigas travessas. Distancia entre extremidade da viga e face dos pilares mais externos -->
+            <min>0</min> <!-- Valor mínimo em metros. -->
+            <max>2</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.05</discretizacao> <!-- Discretização em metros. -->
+        </bl>
+        <fck> <!-- Resistência característica do concreto das travessas. -->
+            <min>25</min> <!-- Valor mínimo em MPa. -->
+            <max>90</max> <!-- Valor máximo em MPa. -->
+            <discretizacao>5</discretizacao> <!-- Discretização em MPa. -->
+        </fck>
+        <c> <!-- Cobrimento das armaduras das travessas. -->
+            <min>0.025</min> <!-- Valor mínimo em metros. -->
+            <max>0.1</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.0005</discretizacao> <!-- Discretização em metros. -->
+        </c>
+    </travessas>
+
+    <tabuleiro> <!-- Tabuleiros. Agrupa longarinas e lajes. -->
+        <fck> <!-- Resistência característica do concreto dos tabuleiros. -->
+            <min>25</min> <!-- Valor mínimo em MPa. -->
+            <max>90</max> <!-- Valor máximo em MPa. -->
+            <discretizacao>5</discretizacao> <!-- Discretização em MPa. -->
+        </fck>
+    </tabuleiro>
+
+    <longarinas> <!-- Vigas Longarinas. -->
+        <n> <!-- Número de longarinas por vão. -->
+            <min>3</min> <!-- Valor mínimo. Utilizar número inteiro. -->
+            <max>15</max> <!-- Valor máximo. Utilizar número inteiro. -->
+            <discretizacao>1</discretizacao> <!-- Discretização. Utilizar número inteiro. -->
+        </n>
+        <b1> <!-- Dimensão b1 da longarina. Largura do talão superior. -->
+            <min>0.25</min> <!-- Valor mínimo em metros. -->
+            <max>1.3</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </b1>
+        <b2> <!-- Dimensão b2 da longarina. Espessura da alma. -->
+            <min>0.15</min> <!-- Valor mínimo em metros. -->
+            <max>0.3</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </b2>
+        <b3> <!-- Dimensão b3 da longarina. Largura do talão inferior. -->
+            <min>0.25</min> <!-- Valor mínimo em metros. -->
+            <max>1</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </b3>
+        <h1> <!-- Dimensão h1 da longarina. Atura de total da longarina. -->
+            <min>1</min> <!-- Valor mínimo em metros. -->
+            <max>2.5</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </h1>
+        <h2> <!-- Dimensão h2 da longarina. Atura do talão superior da longarina. -->
+            <min>0.05</min> <!-- Valor mínimo em metros. -->
+            <max>0.5</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </h2>
+        <h3> <!-- Dimensão h3 da longarina. Atura da transisão entre o talão superior e a alma da longarina. -->
+            <min>0.05</min> <!-- Valor mínimo em metros. -->
+            <max>0.5</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </h3>
+        <h4> <!-- Dimensão h4 da longarina. Atura da transisão entre a alma e o talão inferior da longarina. -->
+            <min>0.05</min> <!-- Valor mínimo em metros. -->
+            <max>0.5</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </h4>
+        <h5> <!-- Dimensão h5 da longarina. Atura do talão inferior da longarina. -->
+            <min>0.15</min> <!-- Valor mínimo em metros. -->
+            <max>0.5</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </h5>
+        <enr> <!-- Comprimento enrijecido da longarina. -->
+            <min>0.05</min> <!-- Valor mínimo em relação ao comprimento da longarina. -->
+            <max>0.35</max> <!-- Valor máximo em relação ao comprimento da longarina. -->
+            <discretizacao>0.05</discretizacao> <!-- Discretização em metros. -->
+        </enr>
+        <benr> <!-- Espessura do enrijecimento da longarina. -->
+            <min>0.15</min> <!-- Valor mínimo em metros. -->
+            <max>1</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </benr>
+        <c> <!-- Cobrimento das armaduras das longarinas. -->
+            <min>0.025</min> <!-- Valor mínimo em metros. -->
+            <max>0.06</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.0005</discretizacao> <!-- Discretização em metros. -->
+        </c>
+        <hap> <!-- Altura do aparelho de apoio. -->
+            <min>0.03</min> <!-- Valor mínimo em metros. -->
+            <max>0.075</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.005</discretizacao> <!-- Discretização em metros. -->
+        </hap>
+        <ncp> <!-- Números de coordoalhas de protensão. -->
+            <min>10</min> <!-- Valor mínimo. -->
+            <max>80</max> <!-- Valor máximo. -->
+            <discretizacao>1</discretizacao> <!-- Discretização. Utilizar número inteiro. -->
+        </ncp>
+        <hpa> <!-- Altura estimada da resultante da força de protensão na ancoragem. -->
+            <min>0.3</min> <!-- Valor mínimo em relação a altura da longarina. -->
+            <max>0.7</max> <!-- Valor máximo em relação a altura da longarina. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em relação a altura da longarina. -->
+        </hpa>
+        <hpc> <!-- Altura mínima da face inferior dos cabos de protensão no centro do vão em relação a altura da longarina. -->
+            <min>0.1</min> <!-- Valor mínimo em relação a altura da longarina. -->
+            <max>0.35</max> <!-- Valor máximo em relação a altura da longarina. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em relação a altura da longarina. -->
+        </hpc>
+    </longarinas>
+
+    <lajes> <!-- Lajes. -->
+        <h> <!-- Espessura das lajes. -->
+            <min>0.17</min> <!-- Valor mínimo em metros. -->
+            <max>0.3</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.01</discretizacao> <!-- Discretização em metros. -->
+        </h>
+        <c> <!-- Cobrimento das armaduras das longarinas. -->
+            <min>0.025</min> <!-- Valor mínimo em metros. -->
+            <max>0.06</max> <!-- Valor máximo em metros. -->
+            <discretizacao>0.0005</discretizacao> <!-- Discretização em metros. -->
+        </c>
+    </lajes>
+</struct>
