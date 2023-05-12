@@ -4,3 +4,6 @@ Software for multiobjective optimization of precast and prestressed concrete via
 ## Download
 * __Windows online installer__: [Download](https://github.com/EVWTRENTINI/OptimusViaduto/releases/download/v1.0/Instalador.OptimusViaduto.-.online.exe) 
 * __Windows offline installer__: [Download](https://github.com/EVWTRENTINI/OptimusViaduto/releases/download/v1.0/Instalador.OptimusViaduto.-.offline.exe)
+* __Linux online installer__: [Download](https://github.com/EVWTRENTINI/OptimusViaduto/releases/download/v1.0/Instalador_OptimusViaduto_online.install) 
+* __Linux offline installer__: [Download](https://github.com/EVWTRENTINI/OptimusViaduto/releases/download/v1.0/Instalador_OptimusViaduto_offline.install) 
+* __Singularity image__: [Download](https://github.com/EVWTRENTINI/OptimusViaduto/releases/download/v1.0/optimusviaduto.simg) 
