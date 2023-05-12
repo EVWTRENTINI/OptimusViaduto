@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Coeficientes do modelo de Possan et al. (2021). Também disponível em Tabela 24a pg 152 - Modelagem da carbonatação e previsão de vida util de estruturas de comcreto em ambiente urbano. -->
+    <dados_cimento>
+        <Tipo_de_cimento>CPI</Tipo_de_cimento>
+        <kc>19.8</kc>
+        <kfc>1.7</kfc>
+        <kad>0.24</kad>
+        <kco2>18</kco2>
+        <kUR>1300</kUR>
+    </dados_cimento>
+    <dados_cimento>
+        <Tipo_de_cimento>CPIIE</Tipo_de_cimento>
+        <kc>22.48</kc>
+        <kfc>1.5</kfc>
+        <kad>0.32</kad>
+        <kco2>15.5</kco2>
+        <kUR>1300</kUR>
+    </dados_cimento>
+    <dados_cimento>
+        <Tipo_de_cimento>CPIIF</Tipo_de_cimento>
+        <kc>21.68</kc>
+        <kfc>1.5</kfc>
+        <kad>0.24</kad>
+        <kco2>18</kco2>
+        <kUR>1100</kUR>
+    </dados_cimento>
+    <dados_cimento>
+        <Tipo_de_cimento>CPIIZ</Tipo_de_cimento>
+        <kc>23.66</kc>
+        <kfc>1.5</kfc>
+        <kad>0.32</kad>
+        <kco2>15.5</kco2>
+        <kUR>1300</kUR>
+    </dados_cimento>
+    <dados_cimento>
+        <Tipo_de_cimento>CPIII</Tipo_de_cimento>
+        <kc>30.5</kc>
+        <kfc>1.7</kfc>
+        <kad>0.32</kad>
+        <kco2>15.5</kco2>
+        <kUR>1300</kUR>
+    </dados_cimento>
+    <dados_cimento>
+        <Tipo_de_cimento>CPIV</Tipo_de_cimento>
+        <kc>33.27</kc>
+        <kfc>1.7</kfc>
+        <kad>0.32</kad>
+        <kco2>15.5</kco2>
+        <kUR>1000</kUR>
+    </dados_cimento>
+    <dados_cimento>
+        <Tipo_de_cimento>CPVARI</Tipo_de_cimento>
+        <kc>19.8</kc>
+        <kfc>1.7</kfc>
+        <kad>0.24</kad>
+        <kco2>18</kco2>
+        <kUR>1300</kUR>
+    </dados_cimento>
+
+    <!-- Teor de adição pozolânica no concreto em % em relação à massa de cimento -->
+    <ad_concreto>
+        <fck>15</fck> <!-- Resistência característica do concreto em MPa -->
+        <ad>0</ad> <!-- Teor de adição pozolânica no concreto em % -->
+    </ad_concreto>
+    <ad_concreto>
+        <fck>50</fck> <!-- Resistência característica do concreto em MPa -->
+        <ad>0</ad> <!-- Teor de adição pozolânica no concreto em % -->
+    </ad_concreto>
+    <ad_concreto>
+        <fck>60</fck> <!-- Resistência característica do concreto em MPa -->
+        <ad>10</ad> <!-- Teor de adição pozolânica no concreto em % -->
+    </ad_concreto>
+    <ad_concreto>
+        <fck>65</fck> <!-- Resistência característica do concreto em MPa -->
+        <ad>10</ad> <!-- Teor de adição pozolânica no concreto em % -->
+    </ad_concreto>
+    <ad_concreto>
+        <fck>70</fck> <!-- Resistência característica do concreto em MPa -->
+        <ad>10</ad> <!-- Teor de adição pozolânica no concreto em % -->
+    </ad_concreto>
+    <ad_concreto>
+        <fck>80</fck> <!-- Resistência característica do concreto em MPa -->
+        <ad>10</ad> <!-- Teor de adição pozolânica no concreto em % -->
+    </ad_concreto>
+
+    <kce>1.00</kce> <!-- Condição de exposição da estrutura: 1.30 - Ambiente interno protegido da chuva; 1.00 - Ambiente externo protegido da chuva; 0.65 Ambiente externo desprotegido da chuva. -->
+
+    <cv_fc>0.15</cv_fc> <!-- Coeficiente de variação da resistência característica do concreto. -->
+
+    <cv_c>0.15</cv_c> <!-- Coeficiente de variação do cobrimento da armadura. -->
+
+    <CO2m>0.055</CO2m> <!-- Teor de CO2 na atmosfera médio. -->
+    <cv_CO2>0.1</cv_CO2> <!-- Coeficiente de variação do teor de CO2 na atmosfera. -->
+
+    <URm>60</URm> <!-- Umidade relativa do ar média. -->
+    <cv_UR>0.15</cv_UR><!-- Coeficiente de variação da Umidade relativa do ar. -->
+
+    <numero_de_analises>8000</numero_de_analises> <!-- Número de avaliações da vida útil de projeto desenvolvidas na simulação de Monte Carlo. -->
+
+    <probabilidade_de_falha>0.067</probabilidade_de_falha> <!-- Probabilidade de falha alvo. Estipulados no FIB 53 (2010): 0.160 - Ambiente seco ou permanentemente úmido; 0.067 - Ambiente seco raramente úmido, moderadamente úmido; 0.023 - Ambiente com ciclos de molhagem e secagem. -->
+</struct>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Parametros do MOPSO. -->
+    <w_min>0.4</w_min> <!-- Fator de inércia final. No caso de fator de inércia constante utilizar o mesmo valor para w_max. -->
+    <w_max>0.4</w_max> <!-- Fator de inércia inicial. No caso de fator de inércia constante utilizar o mesmo valor para w_min. -->
+    <c1>0.5</c1> <!-- Fator de aprendizado C1. Pondera a atração em direção ao seu melhor pessoal também chamado de fator de aprendizado cognitivo. -->
+    <c2>1.0</c2> <!-- Fator de aprendizado C2. Pondera a atração em direção ao seu melhor global também chamado de fator de aprendizado aprendizado social. -->
+    <eta_m>15</eta_m> <!-- Índice do polinômio da mutação. -->
+    <archive_size>130</archive_size> <!-- Tamanho do arquivo de soluções não dominadas. -->
+    <pop_size>130</pop_size> <!-- Tamanho do enxame. -->
+    
+    <bottom>0.1</bottom> <!-- Parcela da do arquivo da qual é escolhida aleatoriamente uma solução à ser removida em caso de arquivo cheio. -->
+    <top>0.1</top> <!-- Parcela do arquivo da qual é escolhida aleatoriamente a melhor solução global. -->
+    <c3i>0</c3i>  <!-- Fator de aprendizado C3. Fator de aprendizado compartilhado. Não testado, utilizar 0 para desconsiderar. -->
+    <p1>0.05</p1> <!-- No caso da partícula atual ser de tipo diferente da melhor particula global p1 é a probabilidade da particula atual assumir o mesmo tipo da melhor partícula global. -->
+    <maxgen>10000</maxgen> <!-- Número de iterações totais do processo. -->
+    <mut_prob>0.25</mut_prob> <!-- Probabilidade da partícula sofrer mutação. -->
+ </struct>

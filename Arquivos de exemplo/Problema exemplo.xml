@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Definições do Problema exemplo. -->    
+    <greide> <!-- Greide da pista do viaduto. -->
+        <!-- Coordenada x do greide em metros. A direção x é a direção longitudinal do viaduto. Podem ser inseridos quantos nós forem necessarios, desde que para cada x exista um z. -->
+        <x>0</x>
+        <x>40</x>
+        <!-- Coordenada z do greide em metros. A direção z é a altura do viaduto. Podem ser inseridos quantos nós forem necessarios, desde que para cada z exista um x. -->
+        <z>7.95</z> 
+        <z>7.95</z>
+
+        <largura>16.2</largura> <!-- Largura do viaduto em em metros. -->
+    </greide>
+
+    <!-- Regiões impedidas de se posicionarem apoios do viaduto. Podem ser inseridas quantas regiões forem necessárias desde que exista ao menos uma região, mesmo que seja fictícia. -->
+    <impedido>
+        <xi>1</xi> <!-- Coordenada x do início da região impedida em metros. -->
+        <xf>10</xf> <!-- Coordenada x do fim da região impedida em metros. -->
+        <pista>false</pista> <!-- Se esta região for uma pista de rolagem utilizar true, se não for uma pista de rolagem utilizar false. -->
+    </impedido>
+    <impedido>
+        <xi>30</xi>
+        <xf>39</xf>
+        <pista>false</pista>
+    </impedido>
+
+    <!-- Nós que definem a topografia do terreno e as sondagem de solo. Podem ser inseridas quantos nós forem necessárias desde que exista ao menos dois nós. -->
+    <terreno>
+        <x>0</x> <!-- Coordenada x do nó do terreno em metros. -->
+        <nivel_terreno>0</nivel_terreno> <!-- Coordenada z do terreno em metros. -->
+        <delta_z_impacto>0</delta_z_impacto> <!-- Espessura de aterro de solo a cima do solo natural em metros. -->
+        
+        <!-- Índice de resistência de penetração do solo. Número de golpes a cada metro. Utilizar quantos forem necessários. -->
+        <Nspt>0</Nspt>  <!-- Número de golpes na cota do nível do terreno. -->
+        <Nspt>2</Nspt>  <!-- Número de golpes na cota do nível do terreno -1 m. -->
+        <Nspt>2</Nspt>  <!-- Número de golpes na cota do nível do terreno -2 m. -->
+        <Nspt>5</Nspt>  <!-- Número de golpes na cota do nível do terreno -3 m. -->
+        <Nspt>17</Nspt> <!-- Número de golpes na cota do nível do terreno -4 m. -->
+        <Nspt>21</Nspt> <!-- Número de golpes na cota do nível do terreno -5 m. -->
+        <Nspt>8</Nspt>  <!-- Número de golpes na cota do nível do terreno -6 m. -->
+        <Nspt>10</Nspt> <!-- Número de golpes na cota do nível do terreno -7 m. -->
+        <Nspt>36</Nspt> <!-- Número de golpes na cota do nível do terreno -8 m. -->
+        <Nspt>29</Nspt> <!-- Número de golpes na cota do nível do terreno -9 m. -->
+        <Nspt>38</Nspt> <!-- Número de golpes na cota do nível do terreno -10 m. -->
+        <Nspt>70</Nspt> <!-- Número de golpes na cota do nível do terreno -11 m. -->
+        <!-- Tipo de solo. 1 para argila pré-adensada e 2 para areia ou argila mole. Utilizar um para cada metro de sondagem. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -1 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -2 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -3 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -4 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -5 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -6 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -7 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -8 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -9 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -10 m. -->
+        <tipo_solo>2</tipo_solo> <!-- Tipo de solo na cota do nível do terreno -11 m. -->
+
+        <nivel_agua>-3.1</nivel_agua> <!-- Coordenada z do nível de água. Caso não tenha sido encontrado, utilizar uma cota inferior a sondagem mais profunda. -->
+    </terreno>
+    <terreno>
+        <x>13.3333</x>
+        <nivel_terreno>-1.5</nivel_terreno>
+        <delta_z_impacto>0</delta_z_impacto>
+        
+        <Nspt>0</Nspt>
+        <Nspt>2</Nspt>
+        <Nspt>2</Nspt>
+        <Nspt>5</Nspt>
+        <Nspt>17</Nspt>
+        <Nspt>21</Nspt>
+        <Nspt>8</Nspt>
+        <Nspt>10</Nspt>
+        <Nspt>36</Nspt>
+        <Nspt>29</Nspt>
+        <Nspt>38</Nspt>
+        <Nspt>70</Nspt>
+
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+
+        <nivel_agua>-4.6</nivel_agua>
+    </terreno>
+    <terreno>
+        <x>26.6667</x>
+        <nivel_terreno>-1.5</nivel_terreno>
+        <delta_z_impacto>0</delta_z_impacto>
+        
+        <Nspt>0</Nspt>
+        <Nspt>2</Nspt>
+        <Nspt>2</Nspt>
+        <Nspt>5</Nspt>
+        <Nspt>17</Nspt>
+        <Nspt>21</Nspt>
+        <Nspt>8</Nspt>
+        <Nspt>10</Nspt>
+        <Nspt>36</Nspt>
+        <Nspt>29</Nspt>
+        <Nspt>38</Nspt>
+        <Nspt>70</Nspt>
+
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+
+        <nivel_agua>-4.6</nivel_agua>
+    </terreno>
+    <terreno>
+        <x>40</x>
+        <nivel_terreno>0</nivel_terreno>
+        <delta_z_impacto>0</delta_z_impacto>
+        
+        <Nspt>0</Nspt>
+        <Nspt>2</Nspt>
+        <Nspt>2</Nspt>
+        <Nspt>5</Nspt>
+        <Nspt>17</Nspt>
+        <Nspt>21</Nspt>
+        <Nspt>8</Nspt>
+        <Nspt>10</Nspt>
+        <Nspt>36</Nspt>
+        <Nspt>29</Nspt>
+        <Nspt>38</Nspt>
+        <Nspt>70</Nspt>
+
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+        <tipo_solo>2</tipo_solo>
+
+        <nivel_agua>-3.1</nivel_agua>
+    </terreno>
+</struct>

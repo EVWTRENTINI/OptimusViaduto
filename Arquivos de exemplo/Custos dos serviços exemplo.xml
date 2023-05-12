@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Custo dos serviços -->
+    <!-- Custo do concreto em função da resistência. Utilizar quantos valores forem necessários -->
+    <concreto>
+        <fck>50</fck> <!-- MPa -->
+        <valor>520</valor> <!-- R$/m³ -->
+    </concreto>
+    <concreto>
+        <fck>60</fck> <!-- MPa -->
+        <valor>570</valor> <!-- R$/m³ -->
+    </concreto>
+    <concreto>
+        <fck>70</fck> <!-- MPa -->
+        <valor>590</valor> <!-- R$/m³ -->
+    </concreto>
+    <concreto>
+        <fck>90</fck> <!-- MPa -->
+        <valor>630</valor> <!-- R$/m³ -->
+    </concreto>
+    
+    <!-- Custo dos serviços relacionados aos tubulões. -->
+    <tubuloes>
+        <escavacao_fuste>51.43</escavacao_fuste> <!-- R$/m³ -->
+        <alargamento_base>318.61</alargamento_base> <!-- R$/m³ -->
+        <CA50>11.18</CA50> <!-- R$/kg -->
+        <lancamento_concreto>46.32</lancamento_concreto> <!-- R$/m³ -->
+    </tubuloes>
+
+    <!-- Custo dos serviços relacionados aos blocos de fundação. -->
+    <blocos>
+        <forma>147.84</forma> <!-- R$/m² -->
+        <CA50>16.78</CA50> <!-- R$/kg -->
+        <lancamento_concreto>46.32</lancamento_concreto> <!-- R$/m³ -->
+    </blocos>
+
+    <!-- Custo dos serviços relacionados aos pilares. -->
+    <pilares>
+        <forma>21.86</forma> <!-- R$/m² -->
+        <CA50>16.78</CA50> <!-- R$/kg -->
+        <lancamento_concreto>54.55</lancamento_concreto> <!-- R$/m³ -->
+    </pilares>
+
+    <!-- Custo dos serviços relacionados as vigas travessas. -->
+    <travessas>
+        <forma>147.84</forma> <!-- R$/m² -->
+        <escoramento>49.2</escoramento> <!-- R$/m³ -->
+        <CA50>16.78</CA50> <!-- R$/kg -->
+        <lancamento_concreto>54.55</lancamento_concreto> <!-- R$/m³ -->
+    </travessas>
+
+    <!-- Custo dos serviços relacionados as vigas longarinas. -->
+    <longarinas>
+        <aparelho_de_apoio>82.2</aparelho_de_apoio> <!-- R$/dcm³ -->
+        <CA50>16.78</CA50> <!-- R$/kg -->
+        <forma>52.71</forma> <!-- R$/m² -->
+        <lancamento_concreto>54.55</lancamento_concreto> <!-- R$/m³ -->
+
+        <!-- Carga, descarga, manobra e lançamento de viga pré-moldada com utilização de guindaste -->
+        <manobra_lancamento>
+            <peso>400</peso> <!-- kN -->
+            <valor>7965.33</valor> <!-- R$ -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>500</peso> <!-- kN -->
+            <valor>7965.33</valor> <!-- R$ -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>750</peso> <!-- kN -->
+            <valor>9033.08</valor> <!-- R$ -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>1000</peso> <!-- kN -->
+            <valor>16062.07</valor> <!-- R$ -->
+        </manobra_lancamento>
+        <manobra_lancamento>
+            <peso>1250</peso> <!-- kN -->
+            <valor>17642.56</valor> <!-- R$ -->
+        </manobra_lancamento>
+
+        <!-- Cordoalha CP 190 RB D = 12.7 mm - fornecimento e instalação. -->
+        <cordoalha_127>13.13</cordoalha_127> <!-- R$/kg -->
+
+        <!-- Cordoalha CP 190 RB D = 15.2 mm - fornecimento e instalação. -->
+        <cordoalha_152>13.59</cordoalha_152> <!-- R$/kg -->
+
+        <!-- Bainha metálica redonda - fornecimento, instalação e injeção de nata de cimento -->
+        <bainha>
+            <diametro>30</diametro> <!-- mm -->
+            <valor>33.58</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>35</diametro> <!-- mm -->
+            <valor>35.59</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>40</diametro> <!-- mm -->
+            <valor>40.96</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>45</diametro> <!-- mm -->
+            <valor>43.13</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>50</diametro> <!-- mm -->
+            <valor>46.85</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>55</diametro> <!-- mm -->
+            <valor>50.69</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>60</diametro> <!-- mm -->
+            <valor>66.38</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>65</diametro> <!-- mm -->
+            <valor>74.03</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>70</diametro> <!-- mm -->
+            <valor>77.77</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>75</diametro> <!-- mm -->
+            <valor>79.27</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>80</diametro> <!-- mm -->
+            <valor>81.41</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>85</diametro> <!-- mm -->
+            <valor>104.66</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>90</diametro> <!-- mm -->
+            <valor>111.2</valor> <!-- R$ -->
+        </bainha>
+        <bainha>
+            <diametro>95</diametro> <!-- mm -->
+            <valor>118.9</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>100</diametro> <!-- mm -->
+            <valor>129.02</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>110</diametro> <!-- mm -->
+            <valor>137.38</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>120</diametro> <!-- mm -->
+            <valor>144.76</valor> <!-- R$/m -->
+        </bainha>
+        <bainha>
+            <diametro>130</diametro> <!-- mm -->
+            <valor>148.86</valor> <!-- R$/m -->
+        </bainha>
+
+        <!-- Ancoragem ativa e passiva para cordoalhas aderentes com D = 12.7 mm - fornecimento e instalação -->
+        <ancoragens_127>
+            <n_cordoalhas>4</n_cordoalhas>
+            <valor>479.36</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>6</n_cordoalhas>
+            <valor>694.02</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>7</n_cordoalhas>
+            <valor>749.09</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>8</n_cordoalhas>
+            <valor>867.52</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>9</n_cordoalhas>
+            <valor>973.7</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>10</n_cordoalhas>
+            <valor>1032.99</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>12</n_cordoalhas>
+            <valor>1275.47</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>15</n_cordoalhas>
+            <valor>1798.62</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>19</n_cordoalhas>
+            <valor>2245.24</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>22</n_cordoalhas>
+            <valor>2805.64</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>27</n_cordoalhas>
+            <valor>3366.32</valor> <!-- R$ -->
+        </ancoragens_127>
+        <ancoragens_127>
+            <n_cordoalhas>31</n_cordoalhas>
+            <valor>4500.12</valor> <!-- R$ -->
+        </ancoragens_127>
+
+        <!-- Ancoragem ativa e passiva para cordoalhas aderentes com D = 15.2 mm - fornecimento e instalação -->
+        <ancoragens_152>
+            <n_cordoalhas>4</n_cordoalhas>
+            <valor>595.98</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>6</n_cordoalhas>
+            <valor>863.75</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>7</n_cordoalhas>
+            <valor>977.6</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>8</n_cordoalhas>
+            <valor>1113.13</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>9</n_cordoalhas>
+            <valor>1276.94</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>10</n_cordoalhas>
+            <valor>1386.65</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>12</n_cordoalhas>
+            <valor>1691.41</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>15</n_cordoalhas>
+            <valor>2183.64</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>19</n_cordoalhas>
+            <valor>2794.32</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>22</n_cordoalhas>
+            <valor>3463.39</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>27</n_cordoalhas>
+            <valor>4461.86</valor> <!-- R$ -->
+        </ancoragens_152>
+        <ancoragens_152>
+            <n_cordoalhas>31</n_cordoalhas>
+            <valor>5900.61</valor> <!-- R$ -->
+        </ancoragens_152>
+    </longarinas>
+
+    <lajes>
+        <trelica>14.56</trelica> <!-- R$/kg -->
+        <CA50>16.78</CA50> <!-- R$/kg -->
+        <lancamento_concreto>54.55</lancamento_concreto> <!-- R$/m³ -->
+    </lajes>
+</struct>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct> <!-- Relações para criação de soluções aleatórias. -->
+    <lajes> <!-- Lajes. -->
+        <h_em_funcao_vao> <!-- Altura da laje em relação ao vão entre longarinas. -->
+            <relacao>0.1</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </h_em_funcao_vao>
+    </lajes>
+
+    <longarinas> <!-- Vigas longarinas. -->
+        <h1_em_funcao_vao> <!-- Relação entre a altura total da longarina e o vão da longarina. -->
+            <relacao>0.066667</relacao>
+            <variacao_aleatoria>0.5</variacao_aleatoria>
+        </h1_em_funcao_vao>
+        <h2_em_funcao_h1> <!-- Relação entre a altura do banzo superior e a altura total da longarina. -->
+            <relacao>0.06</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </h2_em_funcao_h1>
+        <h3_em_funcao_h1> <!-- Relação entre a altura da transição do banzo superior e a altura total da longarina. -->
+            <relacao>0.04</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </h3_em_funcao_h1>
+        <h4_em_funcao_h1> <!-- Relação entre a altura da transição do banzo inferior e a altura total da longarina. -->
+            <relacao>0.1</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </h4_em_funcao_h1>
+        <h5_em_funcao_h1><!-- Relação entre a altura do banzo inferior e a altura total da longarina. -->
+            <relacao>0.2</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </h5_em_funcao_h1>
+        <b1_em_funcao_h1> <!-- Relação entre a largura do banzo superior e a altura total da longarina. -->
+            <relacao>0.6</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </b1_em_funcao_h1>
+        <b2_em_funcao_h1> <!-- Relação entre a espessura da alma e a altura total da longarina. -->
+            <relacao>0.25</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </b2_em_funcao_h1>
+        <b3_em_funcao_h1> <!-- Relação entre a largura do banzo inferior e a altura total da longarina. -->
+            <relacao>0.5</relacao>
+            <variacao_aleatoria>0.3</variacao_aleatoria>
+        </b3_em_funcao_h1>
+        <hpa> <!-- Relação entre altura estimada da resultante da força de protensão na ancoragem e a altura total da longarina. -->
+            <relacao>0.7</relacao>
+            <variacao_aleatoria>0.1</variacao_aleatoria>
+        </hpa>
+    </longarinas>
+</struct>
