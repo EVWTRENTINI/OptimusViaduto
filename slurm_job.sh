@@ -9,10 +9,13 @@
 
 pasta_trabalho=trabalho_1                           # Nome da pasta que contem o problema e os arquivos de configuração. 
 service=cloud                                       # Nome do perfil remoto no rclone.
-sing=opitmusviaduto.simg                            # Define o arquivo de imagem a ser copiado.
+sing=optimusviaduto.simg                            # Define o arquivo de imagem a ser copiado.
 remote_out_in="cluster/${pasta_trabalho}"           # Pasta no serviço remoto para output e input
-remote_sing=cluster                                 # Pasta no serviço remoto para os containers
+remote_sing=cluster                                 # Pasta no serviço remoto para o container
 
+
+
+# Recomendado que apenas usuários avançados alterem este arquivo a partir desta linha.  
 local_sing=.                                        # Pasta local para o container singularity
 local_job="/tmp/job_${SLURM_JOB_ID}"                # Pasta temporária local
 arquivo_saida=saida_MOPSO.mat                       # Nome do arquivo de output. Não alterar.
@@ -39,7 +42,7 @@ echo "Criando pastas temporárias..."
 mkdir -p "${local_job}"
 
 echo "Copiando container..."
-rclone copyto "${service}:${remote_sing}/${sing}" "${local_sing}/Singularity.simg"  --transfers "${SLURM_CPUS_ON_NODE}"
+rclone copyto "${service}:${remote_sing}/${sing}" "${local_sing}/optimusviaduto.simg"  --transfers "${SLURM_CPUS_ON_NODE}"
 
 echo "Copiando arquivos de input..."
 rclone copy "${service}:${remote_out_in}/" "${local_job}/"  --transfers "${SLURM_CPUS_ON_NODE}"
@@ -50,7 +53,7 @@ echo "Executando..."
 singularity run \
      --bind=/scratch:/scratch \
      --bind=/var/spool/slurm:/var/spool/slurm \
-     Singularity.simg
+     optimusviaduto.simg
 
 echo "Enviando output..."
 
